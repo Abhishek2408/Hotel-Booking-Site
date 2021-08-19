@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="Hotels.css">
+    <title>Hotels</title>
+</head>
+<body>
+    <section class="booking">
+        <div class="container">
+            <form action="" class="form">
+                <div class="input-group">
+                    <label for="destination" class="input-label">Destination</label>
+                    <input type="text" class="input" id="destination">
+                </div>
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check In</label>
+                    <input type="date" class="input" id="check-in">
+                </div>
+                <div class="input-group">
+                    <label for="check-out" class="input-label">Check Out</label>
+                    <input type="date" class="input" id="check-out">
+                </div>
+                <div class="input-group">
+                    <label for="adults" class="input-label">Adults</label>
+                    <select class="options" id="adults">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="children" class="input-label">Childrens</label>
+                    <select class="options" id="children">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn form-btn btn-purple">Search
+                    <span class="dots"><i class="fas fa-ellipsis"></i></span>
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="hotels">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Explore</span>
+                <span class="sub-heading">Our beautiful hotels</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-hotels">
+                    <img src="./Images/udaipur-udai-vilas.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">The Oberoi Udaivilas</h5>
+                    <span class="hotel-price">From 2000Rs/Day</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                </div>
+                <button href="#" class="btn btn-gradient">Book Now
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </div>
+            <div class="grid-item featured-hotels">
+                <img src="./Images/kabini-resort-family-pool.jpg" alt="" class="hotel-image">
+                <h5 class="hotel-name">The Kabini County Resorts</h5>
+                <span class="hotel-price">From 2000Rs/Day</span>
+                <div class="hotel-rating">
+                    <!--display star-->
+                </div>
+                <button href="#" class="btn btn-gradient">Book Now
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </div>
+            <div class="grid-item featured-hotels">
+                <img src="./Images/Udaipur-the-Leela-Palace.jpg" alt="" class="hotel-image">
+                <h5 class="hotel-name">The Leela Palace</h5>
+                <span class="hotel-price">From 2000Rs/Day</span>
+                <div class="hotel-rating">
+                    <!--display star-->
+                </div>
+                <button href="#" class="btn btn-gradient">Book Now
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="offer">
+        <div class="container">
+            <div class="offer-content">
+                <div class="discount">
+                    40% off
+                </div>
+                <h5 class="hotel-name">The Paradise</h5>
+                <div class="hotel-rating">
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <!--rating no visible-->
+                </div>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Est tempore culpa debitis unde voluptatum provident.
+                </p>
+                <button href="#" class="btn btn-gradient">Redeem Offer
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="hotels">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Luxuious</span>
+                <span class="sub-heading">Affordable hotels</span>
+            </h5>
+            <div class="grid hotels-grid">
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_1.jpg" alt="">
+                        <h5 class="room-name">ITC Maratha, Mumbai</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_2.jpg" alt="">
+                        <h5 class="room-name">The Taj Mahal, Mumbai</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_3.jpg" alt="">
+                        <h5 class="room-name">Trident Bandra Kurla</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam. 
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_4.jpg" alt="">
+                        <h5 class="room-name">Taj , Santacruz</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_5.jpg" alt="">
+                        <h5 class="room-name">Sofitel Mumbai Bkc</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_6.jpg" alt="">
+                        <h5 class="room-name">ITC Grand Central, Mumbai</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_7.jpg" alt="">
+                        <h5 class="room-name">Trident Nariman Point</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_8.jpg" alt="">
+                        <h5 class="room-name">Taj Lands End</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./Images/hotel_9.jpg" alt="">
+                        <h5 class="room-name">Novetel , Mumbai</h5>
+                    </div>
+                    <div class="hotel-info-wrap">
+                        <span class="room-price">Rs5000 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi sequi, quos possimus aperiam.
+                        </p>
+                        <button href="#" class="btn-rooms-btn">Book Now &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Contact</span>
+                <span class="sub-heading">Get in touch with Us</span>
+            </h5>
+            <div class="contact-content">
+                <div class="traveler-wrap">
+                    <img src="./traveler.png" alt="">
+                </div> 
+                <form action="" class="contact-form">
+                    <div class="input-group-wrap">
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Name" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="input" placeholder="Email" required>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="input" placeholder="Subject" required>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="input" cols="30" rows="8" placeholder="Email" required></textarea>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn form-btn btn-purple">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

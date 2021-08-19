@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  text-decoration: none;
+
+  --dark: #2d2c2c;
+  --dard-color: #532e1c;
+  --light-color: #c5a880;
+  --alt-light-color: #e6e6e6;
+  --light-transparant: rgba(197, 168, 128, 0.7);
+  --light-transparant-alt: rgba(197, 168, 128, 0.4);
+  --gradient-color: linear-gradient(to right, #532e1c, #c5a880);
+  --gradient-color-alt: linear-gradient(to right, #c5a880, #532e1c);
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+.btn {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 3.5rem;
+  border: none;
+  border-radius: 10rem;
+  display: inline-flex;
+  align-items: center;
+}
+.booking {
+  background-image: var(--gradient-color-alt);
+}
+.input-group {
+  margin-bottom: 1.5rem;
+}
+.input-label {
+  display: block;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.input,
+.options {
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: 4rem;
+  padding: 1rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+}
+::placeholder {
+  color: inherit;
+}
+
+.form-btn {
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.btn-purple {
+  background-color: #532e1c;
+}
+
+.btn-purple:hover {
+  background-color: #c5a880;
+}
+
+.btn-gradient {
+  background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover {
+  background-image: var(--gradient-color-alt);
+}
+
+/*hotels section*/
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.sub-heading {
+  font-size: 1.7rem;
+  font-family: "Courgette", cursive;
+  font-weight: 300;
+  color: #a5a5a5;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.featured-hotels {
+  height: 35rem;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+}
+.featured-hotels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-transparant-alt);
+  z-index: -1;
+}
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hotel-name {
+  font-size: 2.6rem;
+}
+
+.hotel-price {
+  font-size: 1.8rem;
+}
+
+.hotel-rating {
+  margin: 1rem 0 2.5rem;
+}
+
+.rating {
+  color: yellow;
+}
+
+/* Special offer */
+.offer {
+  background: linear-gradient(
+      to right,
+      rgba(198, 168, 128, 0.8),
+      rgba(83, 46, 28, 0.8)
+    ),
+    url(./paradise1.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+.offer-content {
+  background-color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.discount {
+  background-color: rgb(255, 174, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: 2px solid var(yellow);
+  outline-offset: 0.5rem;
+}
+.paragraph {
+  color: #a5a5a5;
+  margin-bottom: 2.5rem;
+}
+
+/* hotels-room section*/
+.hotels {
+  background-color: #f2f6f9;
+}
+.image-wrap {
+  position: relative;
+  height: 25rem;
+}
+.image-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-transparant-alt);
+}
+.room-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.room-name {
+  font-size: 2.6rem;
+  background-color: #532e1c;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 2.5rem;
+  z-index: 10;
+}
+.room-price {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #532e1c;
+}
+.per-night {
+  color: var(--dark);
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+.room-btn {
+  color: var(--dark);
+  padding: 0;
+  transition: color 0.5s;
+}
+.room-btn:hover {
+  color: var(--dard-color);
+}
+/* Contact section styles */
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
+.traveler-wrap {
+  display: none;
+}
+.contact-form {
+  width: 100%;
+  background-image: var(--gradient-color);
+  padding: 2.5rem;
+}
+.contact-form .input {
+  display: block;
+  background-color: transparent;
+  color: white;
+  font-weight: normal;
+  border-bottom: 2px solid white;
+  padding-left: 0;
+}
+.bar {
+  display: block;
+  position: relative;
+}
+
+.bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #532e1c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.contact-form .input:focus + .bar::after {
+  transform: scaleX(1);
+}
