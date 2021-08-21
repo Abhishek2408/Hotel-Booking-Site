@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,12 +10,12 @@
 :root {
   text-decoration: none;
 
-  --dark: #2d2c2c;
+  --dark: black;
   --dard-color: #532e1c;
   --light-color: #c5a880;
   --alt-light-color: #e6e6e6;
   --light-transparant: rgba(197, 168, 128, 0.7);
-  --light-transparant-alt: rgba(197, 168, 128, 0.4);
+  --light-transparant-alt: rgba(197, 168, 128, 0.6);
   --gradient-color: linear-gradient(to right, #532e1c, #c5a880);
   --gradient-color-alt: linear-gradient(to right, #c5a880, #532e1c);
 }
@@ -21,9 +23,10 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.6rem;
 }
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -67,6 +70,7 @@ body {
   letter-spacing: 2px;
   font-family: "Open Sans", sans-serif;
 }
+
 ::placeholder {
   color: inherit;
 }
@@ -74,6 +78,7 @@ body {
 .form-btn {
   margin-top: 2.5rem;
   cursor: pointer;
+  margin-bottom: 4rem;
 }
 
 .btn-purple {
@@ -81,7 +86,7 @@ body {
 }
 
 .btn-purple:hover {
-  background-color: #c5a880;
+  background-color: #2d2c2c;
 }
 
 .btn-gradient {
@@ -170,7 +175,7 @@ body {
       rgba(198, 168, 128, 0.8),
       rgba(83, 46, 28, 0.8)
     ),
-    url(./paradise1.jpg) bottom center no-repeat;
+    url(./Images/paradise1.jpg) bottom center no-repeat;
   background-size: cover;
 }
 .offer-content {
@@ -188,7 +193,6 @@ body {
   left: 0;
   padding: 1rem;
   text-transform: uppercase;
-  font-weight: bold;
   outline: 2px solid var(yellow);
   outline-offset: 0.5rem;
 }
@@ -220,8 +224,9 @@ body {
   object-fit: cover;
 }
 .room-name {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   background-color: #532e1c;
+  border-radius: 10px;
   color: #fff;
   padding: 0.5rem 2rem;
   position: absolute;
@@ -240,12 +245,14 @@ body {
   font-size: 1.4rem;
   font-weight: 100;
 }
-.room-btn {
+a {
   color: var(--dark);
+  text-decoration: none;
+  font-weight: bold;
   padding: 0;
   transition: color 0.5s;
 }
-.room-btn:hover {
+a:hover {
   color: var(--dard-color);
 }
 /* Contact section styles */
@@ -289,4 +296,122 @@ body {
 
 .contact-form .input:focus + .bar::after {
   transform: scaleX(1);
+}
+
+/* Footer section */
+
+.footer {
+  padding: 5rem 0;
+  background-color: var(--light-color);
+  color: black;
+}
+.footer-content-brand {
+  margin-bottom: 5rem;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer .paragraph {
+  color: inherit;
+}
+.footer-heading {
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.social-media {
+  display: flex;
+}
+
+.sm-link {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border: 2px solid var(--dard-color);
+  border-radius: 50%;
+  display: flex;
+  margin-right: 1rem;
+  transition: background-color 0.5s;
+}
+
+.sm-link:hover {
+  background-color: var(--dard-color);
+  color: white;
+}
+
+.sm-link i {
+  margin: auto;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  /* Contact section  */
+  .contact-content {
+    justify-content: space-between;
+  }
+  .traveler-wrap {
+    display: block;
+    flex: 0 0 45%;
+  }
+  .traveler-wrap img {
+    margin-left: 25%;
+    width: 50%;
+  }
+  .contact-form {
+    flex: 0 0 50%;
+    align-self: flex-start;
+  }
+  .input-group-wrap {
+    display: flex;
+  }
+  .input-group-wrap .input-group {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  .input-group-wrap .input-group:last-child {
+    margin-right: 0;
+  }
+  /* Footer section styles */
+  .footer {
+    overflow-x: hidden;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-content-brand {
+    margin-bottom: 0;
+    flex: 0 0 60%;
+  }
+  .footer .paragraph {
+    margin-top: 2.5rem;
+  }
+  .footer-heading {
+    margin-bottom: 5rem;
+  }
+  .social-media-wrap {
+    flex: 0 0 40%;
+    margin-left: 2.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  section:not(.booking) {
+    padding: 10rem 0;
+  }
+  /* Booking section */
+  .form {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form .input-group {
+    margin-bottom: 0;
+  }
+  .form .input-group:first-child {
+    flex: 0 0 20%;
+  }
+  .input,
+  .options {
+    min-width: 10rem;
+  }
 }
