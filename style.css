@@ -15,7 +15,7 @@
   --light-color: #c5a880;
   --alt-light-color: #e6e6e6;
   --light-transparant: rgba(197, 168, 128, 0.7);
-  --light-transparant-alt: rgba(197, 168, 128, 0.6);
+  --light-transparant-alt: rgba(197, 168, 128, 0.4);
   --gradient-color: linear-gradient(to right, #532e1c, #c5a880);
   --gradient-color-alt: linear-gradient(to right, #c5a880, #532e1c);
 }
@@ -45,7 +45,7 @@ body {
   align-items: center;
 }
 .booking {
-  background-image: var(--gradient-color-alt);
+  background-color: var(--light-color);
 }
 .input-group {
   margin-bottom: 1.5rem;
@@ -68,7 +68,15 @@ body {
   font-weight: bold;
   color: black;
   letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#destination,
+#check-in,
+#check-out,
+#adults,
+#children {
+  border-radius: 10px;
 }
 
 ::placeholder {
@@ -265,7 +273,7 @@ a:hover {
 }
 .contact-form {
   width: 100%;
-  background-image: var(--gradient-color);
+  background-image: var(--gradient-color-alt);
   padding: 2.5rem;
 }
 .contact-form .input {
